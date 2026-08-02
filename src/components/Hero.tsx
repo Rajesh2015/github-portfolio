@@ -7,18 +7,18 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto flex max-w-5xl flex-col gap-12 px-6 pb-24 pt-36 lg:flex-row lg:items-start lg:pt-44"
+      className="mx-auto flex max-w-5xl flex-col gap-12 px-6 pb-24 pt-36 md:flex-row md:items-start md:pt-44"
     >
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left"
+        className="flex flex-1 flex-col items-center text-center md:items-start md:text-left"
       >
         <img
           src={profilePhoto}
           alt={profile.name}
-          className="h-56 w-56 shrink-0 rounded-full object-cover object-[70%_35%] ring-4 ring-accent/40 shadow-[0_0_48px_-8px_var(--color-accent)]"
+          className="h-40 w-40 shrink-0 rounded-full object-cover object-[70%_35%] ring-4 ring-accent/40 shadow-[0_0_48px_-8px_var(--color-accent)] md:h-48 md:w-48 lg:h-56 lg:w-56"
         />
 
         <p className="mt-8 font-mono text-sm text-accent">Hi, my name is</p>
@@ -33,7 +33,7 @@ export default function Hero() {
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-text-muted">{profile.summary}</p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+        <div className="mt-8 flex flex-wrap justify-center gap-4 md:justify-start">
           <a
             href="#projects"
             className="group inline-flex items-center gap-2 rounded-md border border-accent/40 bg-accent-soft px-5 py-3 font-mono text-sm text-accent transition-colors hover:bg-accent hover:text-bg"
@@ -66,13 +66,13 @@ export default function Hero() {
         className="flex-1"
       >
         <div className="overflow-hidden rounded-lg border border-border bg-surface shadow-2xl shadow-black/40">
-          <div className="flex items-center gap-1.5 border-b border-border-soft bg-bg-soft px-4 py-3">
-            <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
-            <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
-            <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
+          <div className="flex items-center gap-1.5 border-b border-border-soft bg-bg-soft px-3 py-2">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
             <span className="ml-3 font-mono text-xs text-text-dim">whoami.sh</span>
           </div>
-          <pre className="overflow-x-auto p-6 font-mono text-sm leading-relaxed">
+          <pre className="overflow-x-auto p-4 font-mono text-xs leading-relaxed">
             <code>
               <span className="text-text-dim">$</span> <span className="text-text">whoami</span>
               {'\n\n'}
