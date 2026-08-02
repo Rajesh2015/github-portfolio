@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Rajesh Kumar Dash',
   handle: '@Rajesh2015',
-  role: 'Data Engineer & Data Scientist',
+  role: 'Data Engineer & Data enthusiast',
   location: 'Bangalore, India',
   email: 'dashrajesh49@gmail.com',
   summary:
