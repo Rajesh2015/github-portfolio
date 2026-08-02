@@ -8,14 +8,14 @@ export const profile = {
     "I build data pipelines and machine learning systems — from streaming Kafka topics into Delta Lake with Spark, to training models for churn prediction, sentiment analysis, and computer vision. Lately I've been spending more time on the ML/GenAI side while keeping one foot in the data engineering pipelines that feed it.",
   bio: [
     "I started out writing Java and Scala, building batch and streaming pipelines on Spark, Kafka, and Databricks — things like CDC into Delta tables, SCD Type 2 dimensions, and automated Databricks deployments.",
-    'Over the last couple of years I moved further into data science and ML: churn prediction, sentiment analysis, computer vision, and more recently experimenting with LLM agents for synthetic data generation.',
+    'Over the last couple of years I moved further into data Engineering and ML : churn prediction, sentiment analysis, computer vision, and more recently experimenting with LLM agents for synthetic data generation.',
     "I write about what I build on my blog and Medium, and I'm always up for a new project or a good technical conversation.",
   ],
 }
 
 export const links = {
   github: 'https://github.com/Rajesh2015',
-  linkedin: 'https://www.linkedin.com/in/rajesh-kumar-dash-973b45119/',
+  linkedin: 'https://www.linkedin.com/in/rajesh-kumar-d-973b45119',
   blog: 'https://www.rajeshblogs.in/',
   medium: 'https://rajeshblogs.medium.com/',
   email: 'mailto:dashrajesh49@gmail.com',

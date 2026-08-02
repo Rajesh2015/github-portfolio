@@ -82,7 +82,7 @@ export default function Hero() {
               {'\n  '}
               <span className="text-accent">name</span>: <span className="text-accent-3">'Rajesh Kumar Dash'</span>,
               {'\n  '}
-              <span className="text-accent">role</span>: <span className="text-accent-3">'Data Engineer & Data Scientist'</span>,
+              <span className="text-accent">role</span>: <span className="text-accent-3">'Data Engineer & Data Enthusiast'</span>,
               {'\n  '}
               <span className="text-accent">stack</span>: [<span className="text-accent-3">'Spark'</span>,{' '}
               <span className="text-accent-3">'Kafka'</span>, <span className="text-accent-3">'Databricks'</span>,{' '}
