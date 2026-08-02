@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, MapPin } from 'lucide-react'
+import { ArrowRight, Download, MapPin } from 'lucide-react'
 import { profile } from '../data/content'
 import profilePhoto from '../assets/profile.jpg'
 
@@ -12,11 +12,11 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="flex-1"
       >
-        <div className="mb-4 flex items-center gap-3">
+        <div className="mb-6 flex items-center gap-5">
           <img
             src={profilePhoto}
             alt={profile.name}
-            className="h-16 w-16 rounded-full object-cover object-[70%_35%] ring-2 ring-accent/40 shadow-[0_0_20px_-4px_var(--color-accent)]"
+            className="h-28 w-28 shrink-0 rounded-full object-cover object-[70%_35%] ring-4 ring-accent/40 shadow-[0_0_32px_-6px_var(--color-accent)]"
           />
           <p className="font-mono text-sm text-accent">Hi, my name is</p>
         </div>
@@ -44,6 +44,15 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 font-mono text-sm text-text-muted transition-colors hover:border-text-dim hover:text-text"
           >
             Get in touch
+          </a>
+          <a
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 font-mono text-sm text-text-muted transition-colors hover:border-text-dim hover:text-text"
+          >
+            Resume
+            <Download size={16} />
           </a>
         </div>
       </motion.div>
