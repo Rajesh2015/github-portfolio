@@ -5,21 +5,24 @@ import profilePhoto from '../assets/profile.jpg'
 
 export default function Hero() {
   return (
-    <section id="top" className="mx-auto max-w-5xl px-6 pb-24 pt-36 lg:pt-44">
+    <section
+      id="top"
+      className="mx-auto flex max-w-5xl flex-col gap-12 px-6 pb-24 pt-36 lg:flex-row lg:items-start lg:pt-44"
+    >
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col items-center text-center lg:items-start lg:text-left"
+        className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left"
       >
         <img
           src={profilePhoto}
           alt={profile.name}
-          className="h-56 w-56 shrink-0 rounded-full object-cover object-[70%_35%] ring-4 ring-accent/40 shadow-[0_0_48px_-8px_var(--color-accent)] sm:h-64 sm:w-64"
+          className="h-56 w-56 shrink-0 rounded-full object-cover object-[70%_35%] ring-4 ring-accent/40 shadow-[0_0_48px_-8px_var(--color-accent)]"
         />
 
         <p className="mt-8 font-mono text-sm text-accent">Hi, my name is</p>
-        <h1 className="text-4xl font-extrabold tracking-tight text-text sm:text-5xl lg:text-6xl">
+        <h1 className="text-4xl font-extrabold tracking-tight text-text sm:text-5xl">
           {profile.name}.
         </h1>
         <h2 className="mt-2 text-2xl font-semibold text-text-muted sm:text-3xl">{profile.role}.</h2>
@@ -60,7 +63,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15 }}
-        className="mx-auto mt-16 max-w-2xl lg:mx-0"
+        className="flex-1 lg:sticky lg:top-32"
       >
         <div className="overflow-hidden rounded-lg border border-border bg-surface shadow-2xl shadow-black/40">
           <div className="flex items-center gap-1.5 border-b border-border-soft bg-bg-soft px-4 py-3">
