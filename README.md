@@ -22,4 +22,4 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site
 
 To enable it on a fresh repo: **Settings → Pages → Source: GitHub Actions**.
 
-Live at `https://rajesh2015.github.io/portfolio/`.
+Live at `https://rajesh2015.github.io/github-portfolio/`.

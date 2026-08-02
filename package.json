@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://rajesh2015.github.io/portfolio/",
+  "homepage": "https://rajesh2015.github.io/github-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
