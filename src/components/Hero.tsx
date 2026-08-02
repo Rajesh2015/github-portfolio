@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, MapPin } from 'lucide-react'
 import { profile } from '../data/content'
+import profilePhoto from '../assets/profile.jpg'
 
 export default function Hero() {
   return (
@@ -11,7 +12,14 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="flex-1"
       >
-        <p className="mb-4 font-mono text-sm text-accent">Hi, my name is</p>
+        <div className="mb-4 flex items-center gap-3">
+          <img
+            src={profilePhoto}
+            alt={profile.name}
+            className="h-16 w-16 rounded-full object-cover object-[70%_35%] ring-2 ring-accent/40 shadow-[0_0_20px_-4px_var(--color-accent)]"
+          />
+          <p className="font-mono text-sm text-accent">Hi, my name is</p>
+        </div>
         <h1 className="text-4xl font-extrabold tracking-tight text-text sm:text-5xl lg:text-6xl">
           {profile.name}.
         </h1>
