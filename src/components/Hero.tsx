@@ -63,7 +63,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15 }}
-        className="flex-1 lg:sticky lg:top-32"
+        className="flex-1"
       >
         <div className="overflow-hidden rounded-lg border border-border bg-surface shadow-2xl shadow-black/40">
           <div className="flex items-center gap-1.5 border-b border-border-soft bg-bg-soft px-4 py-3">
